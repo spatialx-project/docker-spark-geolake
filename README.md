@@ -15,5 +15,5 @@ Geolake is built on top of [Apache Iceberg](https://iceberg.apache.org/), this p
 docker compose up
 ```
 
-Open (http://localhost:8888)[http://localhost:8888] in browser.
+Open [http://localhost:8888](http://localhost:8888) in browser.
 
