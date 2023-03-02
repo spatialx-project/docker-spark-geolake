@@ -15,5 +15,8 @@ Geolake is built on top of [Apache Iceberg](https://iceberg.apache.org/), this p
 docker compose up
 ```
 
-Open [http://localhost:8888](http://localhost:8888) in browser.
+Open [http://localhost:8888](http://localhost:8888) in browser, there are 2 notebooks inside :
 
+- [geolake-scala-demo](spark/notebooks/geolake-scala-demo.ipynb): shows an example of how to use geolake scala api to read/write data from/to geolake.
+
+- [benchmark-portotaxi](spark/notebooks/benchmark-portotaxi.ipynb): this notebook runs a benchmark on portotaxi dataset which has 1.7M records. You will see the reading/writing performance of the 3 Parquet format(GeoLake Parqeut, GeoParquet, GeoParquet(bbox)) for spatial data. You will also see how the partition reolution parameter affects the performance.
