@@ -1,3 +1,4 @@
 .metals/
+.ipynb_checkpoints
 .vscode/
 postgres/
