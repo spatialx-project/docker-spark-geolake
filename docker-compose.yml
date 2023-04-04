@@ -15,6 +15,9 @@ services:
       - PYSPARK_PYTON=/usr/bin/python3.9
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/spark/bin
     ports:
+      - 4041:4041
+      - 4042:4042
+      - 4043:4043
       - 8888:8888
       - 8080:8080
       - 18080:18080
