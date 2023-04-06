@@ -77,10 +77,7 @@ RUN curl 'http://spatialx-datalake-test.oss-cn-beijing.aliyuncs.com/dla/spark/up
 # Add iceberg spark runtime jar to IJava classpath
 ENV IJAVA_CLASSPATH=/opt/spark/jars/*
 
-RUN mkdir -p /home/iceberg/localwarehouse /home/iceberg/notebooks /home/iceberg/warehouse /home/iceberg/spark-events /home/iceberg
-COPY notebooks/* /home/iceberg/notebooks
-RUN mkdir -p /home/iceberg/data
-COPY data/* /home/iceberg/data
+RUN mkdir -p /home/iceberg/localwarehouse /home/iceberg/notebooks /home/iceberg/warehouse /home/iceberg/spark-events /home/iceberg /home/iceberg/data
 
 # Add a notebook command
 RUN echo '#! /bin/sh' >> /bin/notebook \

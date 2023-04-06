@@ -1,5 +1,7 @@
 version: "3"
 
+volumes:
+  pg_data:
 services:
   spark-geolake:
     image: spatialx/spark-geolake
@@ -8,8 +10,8 @@ services:
     depends_on:
       - postgres
     volumes:
-      - ./warehouse:/home/iceberg/warehouse
-      - ./notebooks:/home/iceberg/notebooks/notebooks
+      - ./spark/data:/home/iceberg/data
+      - ./spark/notebooks:/home/iceberg/notebooks
     environment:
       - SPARK_HOME=/opt/spark
       - PYSPARK_PYTON=/usr/bin/python3.9
@@ -29,4 +31,4 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=demo_catalog
     volumes:
-      - ./postgres/data:/var/lib/postgresql/data
+      - pg_data:/var/lib/postgresql/data

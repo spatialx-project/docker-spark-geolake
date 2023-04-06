@@ -1,5 +1,6 @@
 .metals/
 .ipynb_checkpoints
 .vscode/
-postgres/
+portotaxi.geojson
+portotaxi.geojsonl
 .idea
