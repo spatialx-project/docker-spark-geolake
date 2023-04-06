@@ -20,3 +20,5 @@ Open [http://localhost:8888](http://localhost:8888) in browser, there are 2 note
 - [geolake-scala-demo](spark/notebooks/geolake-scala-demo.ipynb): shows an example of how to use geolake scala api to read/write data from/to geolake.
 
 - [benchmark-portotaxi](spark/notebooks/benchmark-portotaxi.ipynb): this notebook runs a benchmark on portotaxi dataset which has 1.7M records. You will see the reading/writing performance of the 3 Parquet format(GeoLake Parqeut, GeoParquet, GeoParquet(bbox)) for spatial data. You will also see how the partition reolution parameter affects the performance.
+
+Ports 4041, 4042 and 4043 are also forwarded, so you can access Spark Web UI if necessary.
